@@ -2,7 +2,11 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChangePasswordController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\ResetPasswordController;
+use Illuminate\Support\Facades\Broadcast;
+
+
 
 Route::group([
 
@@ -21,6 +25,7 @@ Route::group([
     Route::post('me', [AuthController::class,'me']);
     Route::post('sendPasswordResetLink', [ResetPasswordController::class,'sendEmail']);
     Route::post('resetPassword', [ChangePasswordController::class,'process']);
-
+//    Route::get('chat', [ChatController::class,'chat']);
+//    Route::post('send', [ChatController::class,'send']);
 });
 

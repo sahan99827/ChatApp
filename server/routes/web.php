@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ChatController;
 use Illuminate\Support\Facades\Route;
+use Tymon\JWTAuth\Contracts\Providers\Auth;
 
 /*
 |--------------------------------------------------------------------------
